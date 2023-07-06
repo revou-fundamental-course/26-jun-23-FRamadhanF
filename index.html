@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LDTravel</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Inter:wght@200;400;600;800&family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital@0;1&family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+
+  <!-- Header -->
+    <header>
+        <div class="logo">
+          <b><i>LDTravel</i></b>
+        </div>
+        <nav>
+          <table>
+            <tr>
+              <td>
+                <a href="#">Home</a>
+              </td>
+              <td>
+                <a href="#">Our Package</a>
+              </td>
+              <td>
+                <a href="#">Call Us</a>
+              </td>
+            </tr>
+          </table>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <h1 class="title">Your Trusted Travel Agent's</h1>
+      <p class="subtitle">Your <span>happiness</span> is our <span>happiness</span></p>
+      <section class="content-first" id="content-first">
+        <div class="content-image">
+          <figure>
+            <img class="img-slideshow" src="https://source.unsplash.com/random/650x400?landscape&sig=1" alt="">
+            <img class="img-slideshow" src="https://source.unsplash.com/random/650x400?landscape&sig=2" alt="">
+            <img class="img-slideshow" src="https://source.unsplash.com/random/650x400?landscape&sig=3" alt="">
+            <img class="img-slideshow" src="https://source.unsplash.com/random/650x400?landscape&sig=3" alt="">
+            <div class="img-button">
+              <button onclick="plusDivs(-1)">Prev</button>
+              <button onclick="plusDivs(1)">Next</button>
+            </div>
+            <figcaption>
+              <i>"Liburan jadi menyenangkan bersama inkTravel"</i>
+              <div class="profile">
+                <div class="user">
+                  <i class="uil uil-user"></i>
+                </div>
+                <div class="user-details">
+                  <p class="user-name">Faldi Ramadhan Firmansyah</p>
+                  <i class="user-job">Mahasiswa, 2020</i>
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+          <div class="benefit">
+            <b>Memudahkan Perencanaan dan Menawarkan Pengalaman Terbaik: 4 Kelebihan Tak Terbantahkan Saat Memesan di LdTravel untuk Perjalanan Anda</b>
+            <div class="benefit-list">
+              <div class="number">
+                <b>1</b>
+              </div>
+              <div class="description">
+                <p>
+                  Kemudahan dalam Merencanakan Perjalanan:<br>Dengan memesan melalui travel Anda, Anda dapat merencanakan perjalanan Anda dengan mudah. Travel akan membantu Anda dalam memilih destinasi, menentukan waktu perjalanan, mengatur akomodasi dan transportasi selama perjalanan Anda.
+                </p>
+              </div>
+            </div>
+            <div class="benefit-list">
+              <div class="number">
+                <b>2</b>
+              </div>
+              <div class="description">
+                <p>
+                  Hemat Waktu dan Uang:<br>Melalui travel, Anda dapat memanfaatkan paket perjalanan yang sudah tersedia dengan harga yang lebih terjangkau dibandingkan jika Anda memesan secara terpisah. Travel juga akan membantu Anda dalam mencari penawaran terbaik untuk akomodasi dan transportasi.
+                </p>
+              </div>
+            </div>
+            <div class="benefit-list">
+              <div class="number">
+                <b>3</b>
+              </div>
+              <div class="description">
+                <p>
+                  Mendapat Informasi yang Lebih Lengkap:<br>Travel akan memberikan informasi yang lebih lengkap mengenai destinasi yang akan Anda kunjungi, seperti tempat wisata, budaya, dan kuliner setempat. Hal ini akan membantu Anda untuk mempersiapkan diri dan mengoptimalkan pengalaman perjalanan Anda.
+                </p>
+              </div>
+            </div>
+            <div class="benefit-list">
+              <div class="number">
+                <b>4</b>
+              </div>
+              <div class="description">
+                <p>
+                  Kemudahan dalam Komunikasi:<br>Travel akan menyediakan penerjemah atau guide yang akan membantu Anda dalam berkomunikasi dengan penduduk setempat jika Anda berada di negara yang bahasanya berbeda.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-contact">
+          <div class="contact">
+            <p>
+              <span>C</span>ontact <span>U</span>s
+            </p>
+            <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+
+            <div class="form-section">
+              <form name="message-form" onsubmit="validateForm()">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="First and last name" >
+  
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" >
+  
+                <label for="country">What are you interested in?</label>
+                <select id="country" name="country" >
+                  <option value="" disabled selected>Select option</option>
+                  <option value="bali">Tangerang</option>
+                  <option value="japan">Depok</option>
+                  <option value="singapore">Tasikmalaya</option>
+                  <option value="bandung">Bandung</option>
+                  <option value="surabaya">Bekasi</option>
+                </select>
+  
+                <input type="submit" value="SEND">
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="content-second" id="content-second">
+        <div class="title-package">
+          <h1>Our Package</h1>
+        </div>
+        <div class="packages">
+          <div class="package">
+            <div class="city">
+              <div class="package-profile">
+                <i class="uil uil-favorite"></i>
+              </div>
+              <div class="destination">
+                <p class="destination-title">Jakarta</p>
+                <p class="destination-desc">
+                  Travel dan wisata di Jakarta. Kunjungi cagar budaya dan kuliner yang menarik.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="package">
+            <div class="city">
+              <div class="package-profile">
+                <i class="uil uil-favorite"></i>
+              </div>
+              <div class="destination">
+                <p class="destination-title">Tasikmalaya</p>
+                <p class="destination-desc">
+                  Travel dan wisata di Tasikmalaya. Kunjungi cagar budaya dan kuliner yang menarik.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="package">
+            <div class="city">
+              <div class="package-profile">
+                <i class="uil uil-favorite"></i>
+              </div>
+              <div class="destination">
+                <p class="destination-title">Bekasi</p>
+                <p class="destination-desc">
+                  Travel dan wisata di Bekasi. Kunjungi cagar budaya dan kuliner yang menarik.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="packages">
+          <div class="package">
+            <div class="city">
+              <div class="package-profile">
+                <i class="uil uil-favorite"></i>
+              </div>
+              <div class="destination">
+                <p class="destination-title">Bandung</p>
+                <p class="destination-desc">
+                  Travel dan wisata di Bandung. Kunjungi cagar budaya dan kuliner yang menarik.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="package">
+            <div class="city">
+              <div class="package-profile">
+                <i class="uil uil-favorite"></i>
+              </div>
+              <div class="destination">
+                <p class="destination-title">Tangerang</p>
+                <p class="destination-desc">
+                  Travel dan wisata di Tangerang. Kunjungi cagar budaya dan kuliner yang menarik.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="package">
+            <div class="city">
+              <div class="package-profile">
+                <i class="uil uil-favorite"></i>
+              </div>
+              <div class="destination">
+                <p class="destination-title">Depok</p>
+                <p class="destination-desc">
+                  Travel dan wisata di Depok. Kunjungi cagar budaya dan kuliner yang menarik.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-third" id="content-third">
+        <div class="cta-headline">
+          <h1 class="title-cta">Keliling Indonesia Bersama LdTravel</h1>
+          <p class="desc-cta">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, explicabo ducimus totam ut rem odit atque facilis ipsam eos repellendus?
+          </p>
+        </div>
+        <div class="cta-button">
+          <p class="button">
+            call to action
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="logo-f">
+        <b><i>inkTravel</i></b>
+      </div>
+      <div class="nav-f">
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <p>&copy; 2023 LdTravel</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
